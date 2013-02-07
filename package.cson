@@ -1,0 +1,7 @@
+
+name: "solobit-web-site"
+version: "0.0.1"
+dependencies:
+  "coffee-script": "*"
+  cson: "*"
+  flatiron: "*"
