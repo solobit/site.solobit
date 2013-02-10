@@ -1,0 +1,9 @@
+[Service]
+ExecStart=/usr/local/bin/coffee /srv/www/node/server.coffee
+StandardOutput=syslog
+SyslogIdentifier=www-node
+User=nobody
+Group=nobody
+Environment=PATH=/usr/bin:/usr/local/bin:/usr/local/lib/node_modules/.bin
+Environment=NODE_ENV=production
+
