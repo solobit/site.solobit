@@ -1,0 +1,15 @@
+[Service]
+ExecStart=/usr/local/bin/coffee /srv/www/SiteClusterManager.coffee
+StandardOutput=syslog
+SyslogIdentifier=solobit
+User=nobody
+Group=nobody
+Environment=PATH=/usr/bin:/usr/local/bin:/usr/local/lib/node_modules/.bin
+Environment=NODE_ENV=production
+Nice=-10
+OOMScoreAdjust=-500
+IOSchedulingClass=realtime
+InaccessibleDirectories=/home
+#ReadOnlyDirectories=/srv/www
+PrivateTmp=true
+

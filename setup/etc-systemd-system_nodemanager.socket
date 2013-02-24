@@ -1,0 +1,6 @@
+[Socket]
+ListenStream=/run/solobit.sk
+
+[Install]
+WantedBy=sockets.target
+
