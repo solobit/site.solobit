@@ -8,6 +8,11 @@ Skip to go to: [Installation][Q01] | [Style Guide][Q02] | [Contribute][Q02]
 
 ## References and original work
 
+The idea is to further expand this program/file/document for future direction,
+even further into the `contenteditable` HTML5 element, cross-platform isomorphic
+(Node.js) application direction much like the earlier great works such as
+[Smooth CoffeeScript][SCS]
+
 This experimental publication was largely and heavily inspired by:
 
 * [Ruben Vermeersch][SBE]
@@ -16,6 +21,60 @@ This experimental publication was largely and heavily inspired by:
 * [Systemd for Administrators][0PT]
 * [Arch Linux][ARC] for the user-centric approach
 * and of course the famous [Dr. Donald Knuth][LIT]
+
+You can read more about the [motivation or rationale](<#rationale>) behind this
+project and why I find it relevant for consideration.
+
+I really advise using the [Sublime Editor 2][SE2] because its syntax highliter
+works well with a definition for literate CoffeeScript as a tm-bundle
+[here][TMB]. I use `ALT+Q` or also known as `Meta plus Q` keyboard shortcut to
+perfectly fit texts within 80 column terminal width bounds to support ancient
+and obscure machines (by now not then ^^)
+
+<!-- These blocks should follow any subsection with many references for clearer
+overview and easily link maintenance -->
+[LIT]: <http://www.literateprogramming.com/>
+[GFM]: <https://help.github.com/articles/github-flavored-markdown>
+[LCS]: <https://github.com/jashkenas/coffee-script/issues/1786>
+[SBE]: <http://savanne.be/articles/deploying-node-js-with-systemd/>
+[0PT]: <http://0pointer.de/blog/projects/systemd-for-admins-3.html>
+[ARC]: <https://wiki.archlinux.org/index.php/The_Arch_Way>
+[TMB]: <https://github.com/jashkenas/coffee-script-tmbundle>
+[SE2]: <http://www.sublimetext.com/2>
+[SCS]: <http://autotelicum.github.com/Smooth-CoffeeScript/interactive/interactive-coffeescript.html>
+
+
+
+## Rationale
+
+This document is probably under constant moderation. GitHub history of commits
+should make a nice timeline and practical code archive for me to feel confident
+the legacy of this programming style is kept forever. In fact, it's largely what
+the (Arch inspired) idea of `user-centric` coding is about.
+
+From [The Arch Way](https://wiki.archlinux.org/index.php/The_Arch_Way) we learn:
+
+### Simplicity
+
+> Simplicity is the ultimate sophistication. — Leonardo da Vinci
+
+Let's reword something found in the texts to better suit our ideas:
+
+```md
+
+Simplicity itself has many definitions. We define simplicity as without
+unnecessary additions, modifications, or complications, and provides a
+lightweight coded, yet heavily commented CoffeeScript base structure that allows
+an individual user to shape the system according to their own needs. In short:
+an elegant, minimalist approach.
+
+```
+
+In practice, this means that I did not rely on any potentially 'exotic' packages
+that is unless, you are the type of person that would label anything not
+'official' or 'standard' (as far as that goes) like Markdown or ECMAScript, such
+as CoffeeScript or GFM to be obscure.
+
 
 
 
@@ -38,28 +97,24 @@ because its concepts have been introduced in an order that is best for human
 understanding, using a mixture of formal and informal methods that reinforce
 each other.
 
-[LIT]: <http://www.literateprogramming.com/>
-[GFM]: <https://help.github.com/articles/github-flavored-markdown>
-[LCS]: <https://github.com/jashkenas/coffee-script/issues/1786>
-[SBE]: <http://savanne.be/articles/deploying-node-js-with-systemd/>
-[0PT]: <http://0pointer.de/blog/projects/systemd-for-admins-3.html>
-[ARC]: <https://wiki.archlinux.org/index.php/The_Arch_Way>
-
-
-
 ## Setup
 
-This is a self-documented, slightly opinionated, literate coffeescript file.
-It is executable using a standard coffee-script installation. The Markdown in
-this file can be best experienced as part of GitHub since it uses some additional
+This is a self-documented, slightly opinionated, literate coffeescript file. It
+is executable using a standard coffee-script installation. The Markdown in this
+file can be best experienced as part of GitHub since it uses some additional
 features from [GitHub Flavored Markdown]()
 
-
 A quick 'n dirty one-liner shell (bash/zsh) script to convert and run in one go
-for now:
+for now (assuming a PWD of the root, mine is at /srv/www/server.coffee at the
+moment).
 
 ```sh
-cp server.litcoffee README.md && ga . && gc -am 'update' && gp && coffee server.litcoffee
+
+cp server.litcoffee README.md && \
+git add . && git commit -am 'update' && \
+git push && \
+coffee server.litcoffee
+
 ```
 
 
