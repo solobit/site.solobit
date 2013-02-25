@@ -17,23 +17,32 @@ and vice-versa.
 
 <small>a original work by Supersymmetry</small>
 
-__Skip to go to:__ [Installation]() | [Style Guide]() | [Contribute]()
+<!-- A quick index always goes well in large and often referenced documents -->
+__Skip to go to:__ [Installation]() | [Configuration]() | [Style Guide]() |
+[Contribute]()
 
 __Subjects:__ [Software Architecture]() | [Programming Paradigms]() | [Patterns]()
 
 ## ToDos
 
-Additional stuff to do:
+<!-- I break my convention here for illustrative purposes. To avoid first glance
+star `*` first character on new line equals summarized, unordered list, we use
+the single or double underscore symbols to render fat or italic texts. This is
+just to show it still works. -->
 
-<!-- Note: these para's take about half my GitHub view width now atm -->
-+ Do some reflection on this file for further fine-grained management
-+ Auto-require module imports etc.
-+ Isomorphic and HTML5 contenteditable tips and trics
-+ Self-scan to bridge `h1` to `h6` and the Markdown HTML identifier gap
-+ Include isomorphic client/server view logic seperation (some just really is...)
-+ Extract files and code snippets (if long enough?) from this one (1) file
-+ Make from this 1 file a bunch of directories and files? Based on rules?
-+ Be able to pass variables/constant values from outside the code blocks inside
+**Additional stuff to do:**
+
+<!-- Note: these para's take about half my GitHub view width now atm
+anything neutral gets a *, pos gets + and minus - is for negatives -->
+
+* Do some reflection on this file for further fine-grained management
+* Auto-require module imports etc.
+* Isomorphic and HTML5 contenteditable tips and trics
+* Self-scan to bridge `h1` to `h6` and the Markdown HTML identifier gap
+* Include isomorphic client/server view logic seperation (some just really is...)
+* Extract files and code snippets (if long enough?) from this one (1) file
+* Make from this 1 file a bunch of directories and files? Based on rules?
+* Be able to pass variables/constant values from outside the code blocks inside
 
 
 ## References and original work
@@ -55,11 +64,7 @@ This experimental publication was largely and heavily inspired by:
 You can read more about the [motivation or rationale](<#rationale>) behind this
 project and why I find it relevant for consideration.
 
-I really advise using the [Sublime Editor 2][SE2] because its syntax highliter
-works well with a definition for literate CoffeeScript as a tm-bundle
-[here][TMB]. I use `ALT+Q` or also known as `Meta plus Q` keyboard shortcut to
-perfectly fit texts within 80 column terminal width bounds to support ancient
-and obscure machines (by now not then ^^)
+
 
 <!-- These blocks should follow any subsection with many references for clearer
 overview and easily link maintenance -->
@@ -73,11 +78,30 @@ overview and easily link maintenance -->
 [SE2]: <http://www.sublimetext.com/2>
 [SCS]: <http://autotelicum.github.com/Smooth-CoffeeScript/interactive/interactive-coffeescript.html>
 
-## Trade-offs
+## Trade-off: drawbacks and gains
 
-There are a few advantages and drawbacks that come with this programming style:
+There are a few advantages and drawbacks that come with choosing this
+programming style for usage in (early/parts) of your project.
 
-Cons:
+We assume this program/document is moderated/maintained just as much as it
+requires. On a deeper level, that might mean fixing backwards incompatible stuff
+from either Node.js, NPM, Node-Gyp or Modules, Packages or CoffeeScript or
+broken links and such. It's impossible to plan for the future paths that a
+handful open-source projects, how conservative they might be, actually choose.
+No one owns a magic eightball for that.
+
+### Con's
+
+- Loss of more complex and powerful capabilities of HTML documents through use
+of a limited subset of that markup language and possibly limited usage of true
+HTML inline markdown escaped because any outlet (site like GitHub) might prevent
+the use of those HTML elements through it's own allowed subsets and script
+filtering against cross-server scripting hacks.
+
+- Increased complexity through mixing up several independent languages in 1
+file.
+
+- Risk of over-documenting items.
 
 - GFM and regular Markdown 4-space indention for quotes becomes unavailable due
 to rendering of the coffeescript compiler to code. So if that would come first,
@@ -92,6 +116,17 @@ CoffeeScript.
 content in the form of 'comments' although, contrary to other programming styles
 the value is _right inside the comments_ and the code is actually the least part
 of this file.
+
+### Pro's
+
+In return however, we also gain a few advantages by taking this road. Also some
+of these items are mentioned because they may (partially or fully) mitigate a
+before mentioned drawback of this approach making it perhaps somewhat neutral.
+
++ Architecture written out from the start, point T-0 if done correctly.
+
+
+
 
 
 
@@ -593,3 +628,19 @@ server.listen(if process.env.NODE_ENV is 'production' then 'systemd' else 3000)
 ###
 
 
+### Suggestions for optimal use experience
+
+For a large portion, I believe in the enhancing effect of visual triggers. A
+major one we have available to us for free, is syntax highlighting. In essence,
+we can say that, together with the minimal distraction/syntax of CoffeeScript
+and Markdown, we have very few color-overkill in our environment.
+
+So I really advise using the [Sublime Editor 2][SE2] because its syntax
+highliter works well with a definition for literate CoffeeScript as the creator
+of CoffeeScript updated his release to this programming paradigm, he also
+updated the Sublime syntax file that goes with CoffeeScript, which is nice
+because most people wouldn't know how to write a syntactical matching regular
+expression file for texmate :) You can find the [tm-bundle here][TMB]. I use
+`ALT+Q` or also known as `Meta plus Q` keyboard shortcut to perfectly fit texts
+within 80 column terminal width bounds to support ancient and obscure machines
+(by now not then ^^)
