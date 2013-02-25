@@ -12,9 +12,20 @@ and vice-versa.
 
 <small>a original work by Supersymmetry</small>
 
-Skip to go to: [Installation][Q01] | [Style Guide][Q02] | [Contribute][Q02]
+Skip to go to: [Installation]() | [Style Guide]() | [Contribute]()
 
 Subjects: [Software Architecture]() | [Programming Paradigms]() | [Patterns]()
+
+## ToDo
+
+Additional stuff to do:
+
++ Do some reflection on this file for further fine-grained management
++ Auto-require module imports etc.
++ Isomorphic and HTML5 contenteditable tips and trics
++ Self-scan to bridge `h1` to `h6` and the Markdown HTML identifier gap
++ Include isomorphic client/server view logic seperation (some just really is...)
+
 
 ## References and original work
 
