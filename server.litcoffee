@@ -1,6 +1,15 @@
 # Advanced Server Cluster Manager for Node.js
 
-A literate CoffeeScript and Markdown adventure
+A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
+
+<small>by Supersymmetry</small>
+
+## Setup
+
+This is a self-documented, slightly opinionated, literate coffeescript file.
+It is executable using a standard coffee-script installation. The Markdown in
+this file can be best experienced as part of GitHub since it uses some additional
+features from [GitHub Flavored Markdown]()
 
 ## Introduction
 
@@ -179,6 +188,13 @@ wrapping.
 
 ```coffee-script
 
+    #
+    # This may or may not be exported later. It's really the type of
+    # functionality you may only need once during initialization and
+    # basic sanity checks.
+    #
+
+    # Import the https://github.com/danielzzz/node-portchecker package from npm
     portchecker = require 'portchecker'
 
 ```
