@@ -15,7 +15,7 @@ where my mind took me at that time. This document is intended to be moderated
 over time. Perhaps even by more than one person, as a living example of the
 concepts involving literate programming. So feel free to join in and share :)
 
-## Not-so-style-guide
+## Not-so-stylish guide
 
 Although we do not care too much about styling of code - as much visual things
 of this document content have to be interpreted from the symbols within it -
@@ -29,7 +29,7 @@ also paragraphs so tools like Vim and Sublime will easily parse your text within
 80 columns for terminals. Do this also for lists.
 
 
-Note: the above styles are implemented in this document as much as I could keep
+> Note: the above styles are implemented in this document as much as I could keep
 them in mind or semantical rules of the languages permitted it.
 
 
