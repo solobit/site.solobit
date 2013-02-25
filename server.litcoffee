@@ -68,7 +68,7 @@ From [The Arch Way](https://wiki.archlinux.org/index.php/The_Arch_Way) we learn:
 
 Let's reword something found in the texts to better suit our ideas:
 
-```md
+```markdown
 
 Simplicity itself has many definitions. We define simplicity as without
 unnecessary additions, modifications, or complications, and provides a
