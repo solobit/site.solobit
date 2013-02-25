@@ -2,7 +2,50 @@
 
 ## A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
 
-<small>by Supersymmetry</small>
+<small>a original work by Supersymmetry</small>
+
+Skip to go to: [Installation][Q01] | [Style Guide][Q02] | [Contribute][Q02]
+
+## References and original work
+
+This experimental publication was largely and heavily inspired by:
+
+* [Ruben Vermeersch][SBE]
+* [Literate CoffeeScript (LCS)][LCS] by jashkenas / revence27
+* [GitHub Flavored Markdown][GFM]
+* [Systemd for Administrators][0PT]
+* [Arch Linux][ARC] for the user-centric approach
+* and of course the famous [Dr. Donald Knuth][LIT]
+
+
+
+The last one being of course famous for the invention of this style originally,
+quoting:
+
+I believe that the time is ripe for significantly better documentation of
+programs, and that we can best achieve this by considering programs to be works
+of literature. Hence, my title: "Literate Programming."
+
+Let us change our traditional attitude to the construction of programs: Instead
+of imagining that our main task is to instruct a computer what to do, let us
+concentrate rather on explaining to human beings what we want a computer to do.
+
+The practitioner of literate programming can be regarded as an essayist, whose
+main concern is with exposition and excellence of style. Such an author, with
+thesaurus in hand, chooses the names of variables carefully and explains what
+each variable means. He or she strives for a program that is comprehensible
+because its concepts have been introduced in an order that is best for human
+understanding, using a mixture of formal and informal methods that reinforce
+each other.
+
+[LIT]: <http://www.literateprogramming.com/>
+[GFM]: <https://help.github.com/articles/github-flavored-markdown>
+[LCS]: <https://github.com/jashkenas/coffee-script/issues/1786>
+[SBE]: <http://savanne.be/articles/deploying-node-js-with-systemd/>
+[0PT]: <http://0pointer.de/blog/projects/systemd-for-admins-3.html>
+[ARC]: <https://wiki.archlinux.org/index.php/The_Arch_Way>
+
+
 
 ## Setup
 
@@ -46,6 +89,10 @@ execute
 also paragraphs so tools like Vim and Sublime will easily parse your text within
 80 columns for terminals. Do this also for lists.
 
+* Note that you cannot use a pound `#` sign on the first line of a coffeescript
+block. You should generally keep the first line empty and start with 4 spaces
+indention on the second line within the \`\`\` coffee-script block.
+
 
 > Note: the above styles are implemented in this document as much as I could keep
 them in mind or semantical rules of the languages permitted it.
@@ -57,23 +104,34 @@ performance asynchronous service manager 'systemd'. For purpose of
 persistence through (re)boot (used to be init scripts) we have written an
 exclusive service file and sockets file to be used.
 
+So below, after the piece declaring the GFM code-block in coffee-script, we
+leave the first new line empty.
+
 ``` coffee-script
 
-    #
-    # Sneak in a logger real quickly...
+    # Sneak in a logger real quickly... habit dies hard
     winston = require 'winston'
-    log = (args...) ->
-        winston.info args...
+
+    # Splash is nice, how does winston like them?
+    log = (args...) -> winston.info args...
 
     # TODO: move this to a vow unit test topic after a systemd check
+    # using `systemctl info solobit.socket` on my z-shell SSH connection to
+    # the VPS.
     log "/etc/systemd/system/solobit.{service,socket} started"
 
 ```
 
-The socket is enabled and started by 'systemctl enable solobit.socket'. It will
-execute coffee-script on this file.
+The socket is enabled and started by using the following command from the shell:
 
-See the service and socket files for more information.
+```sh
+systemctl enable solobit.socket
+```
+
+It will execute coffee-script on this file. For completeness, I should include
+these file contents below, as they do not take much space.
+
+
 
 ## Dependencies
 
