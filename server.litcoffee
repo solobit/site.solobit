@@ -1,6 +1,6 @@
 # Advanced Server Cluster Manager for Node.js
 
-A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
+## A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
 
 <small>by Supersymmetry</small>
 
@@ -10,6 +10,15 @@ This is a self-documented, slightly opinionated, literate coffeescript file.
 It is executable using a standard coffee-script installation. The Markdown in
 this file can be best experienced as part of GitHub since it uses some additional
 features from [GitHub Flavored Markdown]()
+
+
+A quick 'n dirty one-liner shell (bash/zsh) script to convert and run in one go
+for now:
+
+```sh
+cp server.litcoffee README.md && ga . && gc -am 'update' && gp && coffee server.litcoffee
+```
+
 
 ## Introduction
 
