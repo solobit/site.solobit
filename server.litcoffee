@@ -1,6 +1,6 @@
 # Advanced Server Cluster Manager for Node.js
 
-##### A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
+##### A little literate [CoffeeScript][CS] and [GitHub Flavored Markdown][GFM] adventure
 
 _99% of the work a programmer/designer does is made up of thought, the rest is code_
 
@@ -14,6 +14,8 @@ This part is used to demonstrate my profession as literate coder for long-term
 sustainable development through architecture documentation, collaboration and
 innovation. I also provide translation services from technical Dutch to English
 and vice-versa.
+
+[CS]: <http://coffeescript.org>
 
 <small>a original work by Supersymmetry</small>
 
