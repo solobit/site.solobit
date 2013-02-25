@@ -123,12 +123,10 @@ Markdown rendering sites and as close to 'standard' I like to come with Markdown
 at the moment for my own comfort.
 
 
-
-
 The last one being of course famous for the invention of this style originally,
 quoting:
 
-| I believe that the time is ripe for significantly better documentation of
+> I believe that the time is ripe for significantly better documentation of
 programs, and that we can best achieve this by considering programs to be works
 of literature. Hence, my title: "Literate Programming."
 
