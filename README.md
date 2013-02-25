@@ -25,6 +25,9 @@ Additional stuff to do:
 + Isomorphic and HTML5 contenteditable tips and trics
 + Self-scan to bridge `h1` to `h6` and the Markdown HTML identifier gap
 + Include isomorphic client/server view logic seperation (some just really is...)
++ Extract files and code snippets (if long enough?) from this one (1) file
++ Make from this 1 file a bunch of directories and files? Based on rules?
++ Be able to pass variables/constant values from outside the code blocks inside
 
 
 ## References and original work
