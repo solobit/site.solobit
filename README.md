@@ -83,6 +83,24 @@ that is unless, you are the type of person that would label anything not
 'official' or 'standard' (as far as that goes) like Markdown or ECMAScript, such
 as CoffeeScript or GFM to be obscure.
 
+So simplicity only goes as far as your personal perspective on the term 'simple'
+- as said it's highly subjective - but early on I did realize some important
+short-commings with many software packages I used, I really can abstract things
+in a high-speed fashion and in the longer term the patterns I see become more
+'natural' so even anything remotely 'standardized' (and probably not elegant but
+more 'complete') would still feel like a short-comming; a negative trade-off for
+using a (sub)set of languages, syntax or convention, style or rule and what not.
+
+One example of type of 'problems' faced when tracing them to their root sources,
+was the inability to do much near-complex things in Regular Markdown. Luckily
+this bad side-effect was negated partially through the popularity and user-base
+of GitHub and their use of GFM through-out the site. This made it a lot easier
+to choose this form of Markdown as the one I wanted to use (a) because of the
+familiarity and (b) due to the automatic syntax highlighting in many popular
+programming languages. That makes it a better choice over any other online
+Markdown rendering sites and as close to 'standard' I like to come with Markdown
+at the moment for my own comfort.
+
 
 
 
