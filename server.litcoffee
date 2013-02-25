@@ -32,8 +32,6 @@ also paragraphs so tools like Vim and Sublime will easily parse your text within
 > Note: the above styles are implemented in this document as much as I could keep
 them in mind or semantical rules of the languages permitted it.
 
-
-
 ## Prerequisites
 
 This machine is running a rolling Arch Linux release with the next-gen high
@@ -41,8 +39,17 @@ performance asynchronous service manager 'systemd'. For purpose of
 persistence through (re)boot (used to be init scripts) we have written an
 exclusive service file and sockets file to be used.
 
-```sh
-/etc/systemd/system/solobit.{service,socket}
+``` coffee-script
+
+    #
+    # Sneak in a logger real quickly...
+    winston = require 'winston'
+    log = (args...) ->
+        winston.info args...
+
+    # TODO: move this to a vow unit test topic after a systemd check
+    log "/etc/systemd/system/solobit.{service,socket} started"
+
 ```
 
 The socket is enabled and started by 'systemctl enable solobit.socket'. It will
@@ -68,21 +75,25 @@ protocol and any port under 80.
 
 ```coffee-script
 
-
+    #
+    # Include core node.js HTTP server library
+    #
     http = require 'http'
 
 ```
 
 #### Domains (experimental)
 
-This is N/A
+This is not included yet. I might also use something like Events2 or
+ANSInception instead.
+
+To be continued...
 
 ### Internal modules (this application domain)
 
 Most larger projects and pieces of code written, we like to organize application
 logic from the Node.js perspective of a `a module is a file` and expose
 functionality through the use of the `module.exports` method.
-
 
 #### Winston: asynchronous anything logger
 
@@ -91,8 +102,11 @@ to make this kind of logging its own internal module.
 
 ``` coffee-script
 
-    #logger = require './lib/Logger.litcoffee'
-    winston = require 'winston'
+    #
+    # Optionally delegate logging tasks to another 'chapter'?
+    # logger = require './lib/Logger.litcoffee'
+    #
+
 
 ```
 
@@ -104,6 +118,9 @@ Support for running node.js as a socket-activated service under systemd
 
 ``` coffee-script
 
+    #
+    # Not really need to assign this to a variable yet?
+    #
     require 'systemd'
 
 ```
@@ -118,9 +135,13 @@ so on. Therefor we employ a strategy much like other PaaS (Heroku e.g.) uses:
 the resource becomes available only on request.
 
 
-
 ```coffee-script
 
+    #
+    # We may choose not to include this style of three times # here but
+    # the way GitHub currently parses Markdown files (GFM) `.md` inside their
+    # site, the first new line and any will be neglected.
+    #
     require 'autoquit'
 
 ```
@@ -133,6 +154,9 @@ instance of the `Log` object so we may use its exposed methods and properties.
 
 ```coffee-script
 
+    #
+    # Include this `journalctl` service log inside here :)
+    #
     journald = require('journald').Log
 
 ```
