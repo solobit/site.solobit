@@ -12,14 +12,15 @@ and vice-versa.
 
 <small>a original work by Supersymmetry</small>
 
-Skip to go to: [Installation]() | [Style Guide]() | [Contribute]()
+_Skip to go to:_ [Installation]() | [Style Guide]() | [Contribute]()
 
 Subjects: [Software Architecture]() | [Programming Paradigms]() | [Patterns]()
 
-## ToDo
+## ToDos
 
 Additional stuff to do:
 
+<!-- Note: these para's take about half my GitHub view width now atm -->
 + Do some reflection on this file for further fine-grained management
 + Auto-require module imports etc.
 + Isomorphic and HTML5 contenteditable tips and trics
