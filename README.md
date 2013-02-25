@@ -2,6 +2,13 @@
 
 ## A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
 
+The 'entire' source code of this project can be found at:
+https://raw.github.com/solobit/site.solobit/site/clusters/README.md
+
+This part is used to demonstrate my profession as literate coder for long-term
+sustainable development through architecture documentation, collaboration and
+innovation.
+
 <small>a original work by Supersymmetry</small>
 
 Skip to go to: [Installation][Q01] | [Style Guide][Q02] | [Contribute][Q02]
