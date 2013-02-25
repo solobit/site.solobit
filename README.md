@@ -12,9 +12,9 @@ and vice-versa.
 
 <small>a original work by Supersymmetry</small>
 
-_Skip to go to:_ [Installation]() | [Style Guide]() | [Contribute]()
+__Skip to go to:__ [Installation]() | [Style Guide]() | [Contribute]()
 
-Subjects: [Software Architecture]() | [Programming Paradigms]() | [Patterns]()
+__Subjects:__ [Software Architecture]() | [Programming Paradigms]() | [Patterns]()
 
 ## ToDos
 
@@ -45,7 +45,7 @@ This experimental publication was largely and heavily inspired by:
 * [GitHub Flavored Markdown][GFM]
 * [Systemd for Administrators][0PT]
 * [Arch Linux][ARC] for the user-centric approach
-* and of course the famous [Dr. Donald Knuth][LIT]
+* and of course the famous [Dr. Donald Knuth][LIT] who first coined this idea
 
 You can read more about the [motivation or rationale](<#rationale>) behind this
 project and why I find it relevant for consideration.
@@ -128,7 +128,7 @@ at the moment for my own comfort.
 The last one being of course famous for the invention of this style originally,
 quoting:
 
-I believe that the time is ripe for significantly better documentation of
+| I believe that the time is ripe for significantly better documentation of
 programs, and that we can best achieve this by considering programs to be works
 of literature. Hence, my title: "Literate Programming."
 
