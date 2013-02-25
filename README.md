@@ -1,6 +1,6 @@
 # Advanced Server Cluster Manager for Node.js
 
-## A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
+##### A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
 
 The 'entire' source code of this project can be found at:
 https://raw.github.com/solobit/site.solobit/site/clusters/README.md
@@ -60,13 +60,17 @@ should make a nice timeline and practical code archive for me to feel confident
 the legacy of this programming style is kept forever. In fact, it's largely what
 the (Arch inspired) idea of `user-centric` coding is about.
 
+For the most part, this section will describe those elements of our program that
+deal with matters of 'philosophy' behind the creation of this work.
+
 From [The Arch Way](https://wiki.archlinux.org/index.php/The_Arch_Way) we learn:
 
 ### Simplicity
 
 > Simplicity is the ultimate sophistication. — Leonardo da Vinci
 
-Let's reword something found in the texts to better suit our ideas:
+Let's reword something found in The Arch Way texts to better fit our ideas in
+the context of a single app, not operating system.
 
 ```markdown
 
