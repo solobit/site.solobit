@@ -14,6 +14,8 @@ and vice-versa.
 
 Skip to go to: [Installation][Q01] | [Style Guide][Q02] | [Contribute][Q02]
 
+Subjects: [Software Architecture]() | [Programming Paradigms]() | [Patterns]()
+
 ## References and original work
 
 The idea is to further expand this program/file/document for future direction,
