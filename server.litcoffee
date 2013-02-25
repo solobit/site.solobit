@@ -2,6 +2,11 @@
 
 ##### A little literate [CoffeeScript]() and [GitHub Flavored Markdown]() adventure
 
+_99% of the work a programmer/designer does is made up of thought, the rest is code_
+
+It's not the goal that matters, it's the road towards it and choices man makes
+that lead up-to a goal...
+
 The 'entire' source code of this project can be found at:
 https://raw.github.com/solobit/site.solobit/site/clusters/README.md
 
@@ -67,6 +72,26 @@ overview and easily link maintenance -->
 [TMB]: <https://github.com/jashkenas/coffee-script-tmbundle>
 [SE2]: <http://www.sublimetext.com/2>
 [SCS]: <http://autotelicum.github.com/Smooth-CoffeeScript/interactive/interactive-coffeescript.html>
+
+## Trade-offs
+
+There are a few advantages and drawbacks that come with this programming style:
+
+Cons:
+
+- GFM and regular Markdown 4-space indention for quotes becomes unavailable due
+to rendering of the coffeescript compiler to code. So if that would come first,
+unmodified, it would 99% certain choke on that being text (from your quote
+intended as just that, text not coffeescript).
+
+- Not much work/advancement has been made in this field so examples might be
+scarce although, this also goes certainly for parts of any new technology like
+CoffeeScript.
+
+- Limited available markup and styles due to focus being on textual pieces of
+content in the form of 'comments' although, contrary to other programming styles
+the value is _right inside the comments_ and the code is actually the least part
+of this file.
 
 
 
