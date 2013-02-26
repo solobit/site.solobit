@@ -4,11 +4,10 @@
 
 _99% of the work a programmer/designer does is made up of thought, the rest is code_
 
-It's not the goal that matters, it's the road towards it and choices man makes
-that lead up-to a goal...
-
-The 'entire' source code of this project can be found at:
+The 'entire' source code of this project can be found by following:
 https://raw.github.com/solobit/site.solobit/site/clusters/README.md
+
+__NOTE:__ This is candidate for a own repository, not just themed branch.
 
 This part is used to demonstrate my profession as literate coder for long-term
 sustainable development through architecture documentation, collaboration and
@@ -32,19 +31,24 @@ star `*` first character on new line equals summarized, unordered list, we use
 the single or double underscore symbols to render fat or italic texts. This is
 just to show it still works. -->
 
-Additional stuff to do:
+**Additional stuff to do:**
 
--[ ] Do some reflection on this file for further fine-grained management
-- [] Auto-require module imports etc.
-- [ ] Isomorphic and HTML5 contenteditable tips and trics
-- [ ] Self-scan to bridge `h1` to `h6` and the Markdown HTML identifier gap
-- [ ] Include isomorphic client/server view logic seperation (some just really is...)
-- [ ] Extract files and code snippets (if long enough?) from this one (1) file
-- [ ] Make from this 1 file a bunch of directories and files? Based on rules?
-- [ ] Be able to pass variables/constant values from outside the code blocks inside
+*Note: lists can be turned into Task Lists which allow for `- [x]` to check-off
+items from the list. This feature is enabled _for Issue and Pull Request
+descriptions and comments only_.*
 
 <!-- Note: these para's take about half my GitHub view width now atm
 anything neutral gets a *, pos gets + and minus - is for negatives -->
+
+* Do some reflection on this file for further fine-grained management
+* Auto-require module imports etc.
+* Isomorphic and HTML5 contenteditable tips and trics
+* Self-scan to bridge `h1` to `h6` and the Markdown HTML identifier gap
+* Include isomorphic client/server view logic seperation (some just really is...)
+* Extract files and code snippets (if long enough?) from this one (1) file
+* Make from this 1 file a bunch of directories and files? Based on rules?
+* Be able to pass variables/constant values from outside the code blocks inside
+
 
 ## References and original work
 
@@ -65,8 +69,6 @@ This experimental publication was largely and heavily inspired by:
 You can read more about the [motivation or rationale](<#rationale>) behind this
 project and why I find it relevant for consideration.
 
-
-
 <!-- These blocks should follow any subsection with many hyperlinks / references
 for clearer overview and easily link maintenance -->
 
@@ -86,9 +88,9 @@ There are a few advantages and drawbacks that come with choosing this
 programming style for usage in (early/parts) of your project.
 
 We assume this program/document is moderated/maintained just as much as it
-requires. On a deeper level, that might mean fixing backwards incompatible stuff
-from either Node.js, NPM, Node-Gyp or Modules, Packages or CoffeeScript or
-broken links and such. It's impossible to plan for the future paths that a
+requires. On a deeper level, that might mean fixing backwards incompatible
+things from either Node.js, NPM, Node-Gyp or Modules, Packages or CoffeeScript
+or broken links and such. It's impossible to plan for the future paths that a
 handful open-source projects, how conservative they might be, actually choose.
 No one owns a magic eightball for that.
 
@@ -130,8 +132,6 @@ before mentioned drawback of this approach making it perhaps somewhat neutral.
 
 
 
-
-
 ## Rationale
 
 This document is probably under constant moderation. GitHub history of commits
@@ -142,6 +142,60 @@ the (Arch inspired) idea of `user-centric` coding is about.
 For the most part, this section will describe those elements of our program that
 deal with matters of 'philosophy' behind the creation of this work.
 
+Obviously, we will have the obligation to open with the father of this paradigm:
+Dr. Donald Knuth. To quote him is probably the best reference we can find to see
+if we can approach his ideas as closely as possible.
+
+### Literate programming
+
+> I believe that the time is ripe for significantly better documentation of
+programs, and that we can best achieve this by considering programs to be works
+of literature. Hence, my title: "Literate Programming."
+
+Lateron, Dr. Knuth challenges us to change our whole attitude around programming
+and development (typically one being with little consideration for other people
+that need to read your code). Most code projects have source code that is
+documented 'poorly' at best, very rarely you might find this done in a 'ok'
+fashion, usually because a community developer/user has taken time long after
+the project was finished/stable and added some clarity where needed or added
+tags for a tool like JSDoc to generate API documentation etc. Much more, I see a
+future for this style/paradigm to be in the earliest stages possible, when
+thinking about the design and now, we can even blog and write executable code at
+the same time.
+
+> Let us change our traditional attitude to the construction of programs: Instead
+of imagining that our main task is to instruct a computer what to do, let us
+concentrate rather on explaining to human beings what we want a computer to do.
+
+Keep in mind, this entire process and the literate style I try to advocate, is
+solely here to prevent problems that any ancient/legacy software has: loss of
+knowledge over time, increased costs exponential with obscurity of the code.
+Because its so damn expensive to find and hire one who can actually do the
+'black magic' it might one day become (although I doubt this will ever become
+part of some kernel.
+
+Of course, Dr. Knuth had that in mind as well but it goes deeper.
+
+> The practitioner of literate programming can be regarded as an essayist, whose
+main concern is with exposition and excellence of style. Such an author, with
+thesaurus in hand, chooses the names of variables carefully and explains what
+each variable means. He or she strives for a program that is comprehensible
+because its concepts have been introduced in an order that is best for human
+understanding, using a mixture of formal and informal methods that reinforce
+each other.
+
+We can easily conclude that `in an order that is best for human understanding`
+is the key part of the sentence here - it's our goal to have people (better
+appearantly) understand code. One way of doing so, is to pay attention to the
+naming of variables (but there are more pointers).
+
+The cool thing is that our managers might actually start grasping this stuff so
+we don't have to chew out every little thing for their unknowning behinds.
+
+Now another great inspiration and source of joy for me, is Arch Linux. Its been
+my gateway drug into the UNIX philosophy and has some nice principles that I
+find to be true here as well.
+
 From [The Arch Way](https://wiki.archlinux.org/index.php/The_Arch_Way) we learn:
 
 ### Simplicity
@@ -151,15 +205,11 @@ From [The Arch Way](https://wiki.archlinux.org/index.php/The_Arch_Way) we learn:
 Let's reword something found in The Arch Way texts to better fit our ideas in
 the context of a single app, not operating system.
 
-```markdown
-
-Simplicity itself has many definitions. We define simplicity as without
+> Simplicity itself has many definitions. We define simplicity as without
 unnecessary additions, modifications, or complications, and provides a
 lightweight coded, yet heavily commented CoffeeScript base structure that allows
 an individual user to shape the system according to their own needs. In short:
 an elegant, minimalist approach.
-
-```
 
 In practice, this means that I did not rely on any potentially 'exotic' packages
 that is unless, you are the type of person that would label anything not
@@ -185,24 +235,7 @@ Markdown rendering sites and as close to 'standard' I like to come with Markdown
 at the moment for my own comfort.
 
 
-The last one being of course famous for the invention of this style originally,
-quoting:
 
-> I believe that the time is ripe for significantly better documentation of
-programs, and that we can best achieve this by considering programs to be works
-of literature. Hence, my title: "Literate Programming."
-
-Let us change our traditional attitude to the construction of programs: Instead
-of imagining that our main task is to instruct a computer what to do, let us
-concentrate rather on explaining to human beings what we want a computer to do.
-
-The practitioner of literate programming can be regarded as an essayist, whose
-main concern is with exposition and excellence of style. Such an author, with
-thesaurus in hand, chooses the names of variables carefully and explains what
-each variable means. He or she strives for a program that is comprehensible
-because its concepts have been introduced in an order that is best for human
-understanding, using a mixture of formal and informal methods that reinforce
-each other.
 
 ## Setup
 
@@ -216,14 +249,12 @@ for now (assuming a PWD of the root, mine is at /srv/www/server.coffee at the
 moment).
 
 ```sh
-
-cp server.litcoffee README.md && \
-git add . && git commit -am 'update' && \
+\cp server.litcoffee README.md && \
+git add . && \
+git commit -am 'update' && \
 git push && \
 coffee server.litcoffee
-
 ```
-
 
 ## Introduction
 
@@ -253,7 +284,7 @@ also paragraphs so tools like Vim and Sublime will easily parse your text within
 
 * Note that you cannot use a pound `#` sign on the first line of a coffeescript
 block. You should generally keep the first line empty and start with 4 spaces
-indention on the second line within the \`\`\` coffee-script block.
+indention on the second line within the \``` coffee-script block.
 
 
 > Note: the above styles are implemented in this document as much as I could keep
@@ -262,14 +293,14 @@ them in mind or semantical rules of the languages permitted it.
 ## Prerequisites
 
 This machine is running a rolling Arch Linux release with the next-gen high
-performance asynchronous service manager 'systemd'. For purpose of
-persistence through (re)boot (used to be init scripts) we have written an
-exclusive service file and sockets file to be used.
+performance asynchronous service manager 'systemd'. For purpose of persistence
+through (re)boot (used to be init scripts) we have written an exclusive service
+file and sockets file to be used.
 
 So below, after the piece declaring the GFM code-block in coffee-script, we
 leave the first new line empty.
 
-``` coffee-script
+```coffeescript
 
     # Sneak in a logger real quickly... habit dies hard
     winston = require 'winston'
@@ -284,16 +315,102 @@ leave the first new line empty.
 
 ```
 
-The socket is enabled and started by using the following command from the shell:
+Note that the name is up to you to choose, just happens to be the name of my
+enterprise (ahem) for comfort and clarity. Also keep in mind you may need to use
+`sudo` here.
+
+It will execute coffee-script on this file. For completeness, I should include
+these file contents below, as they do not take much space.
+
+This file is the service file and it will be tied to our socket file.
+
+### Service definition
+
+```sh
+# filename: /etc/systemd/system/solobit.service
+[Service]
+ExecStart=/usr/local/bin/coffee /srv/www/SiteClusterManager.coffee
+StandardOutput=syslog
+SyslogIdentifier=solobit
+User=nobody
+Group=nobody
+Environment=PATH=/usr/bin:/usr/local/bin:/usr/local/lib/node_modules/.bin
+Environment=NODE_ENV=production
+Nice=-10
+OOMScoreAdjust=-500
+IOSchedulingClass=realtime
+InaccessibleDirectories=/home
+#ReadOnlyDirectories=/srv/www
+PrivateTmp=true
+```
+
+Btw, these are actually very good candidates for 'embedded resources' as a
+concept. This includes the content of a file that could be extracted, created
+and written 1-on-1 as long as we get a file name path and proper permissions.
+
+Again, this would require for us to have a way and pass in variables/constants
+for the external tools to use.
+
+One solution that is a bit hackish might be to just use a naming convention such as:
+
+```sh
+# @Include this file because we flag -I or such here?
+# @Using /this/path/and/name as we provided it.
+# @Etc
+And here we have the content
+```
+
+But in the end, we might as well just include these tools as integrated part of
+the entire module so we may just pass the configuration details as coffeescript
+to a included module instance. This would probably make the most sense although
+some tools will just be easiest using only a CLI command with good defaults.
+
+### Socket definition
+
+This is a tiny file which holds our socket path and ensures that it runs at
+start/boot.
+
+```sh
+# filename: /etc/systemd/system/solobit.socket
+[Socket]
+ListenStream=/run/solobit.sk
+
+[Install]
+WantedBy=sockets.target
+```
+
+Thats all. Using systemd I no longer have to use/write elaborate init scripts.
+Now you are ready to enable the socket and see if it worked. Continue below to
+read how...
+
+### Enable and start socket service listener
 
 ```sh
 systemctl enable solobit.socket
 ```
 
-It will execute coffee-script on this file. For completeness, I should include
-these file contents below, as they do not take much space.
+You can start it using the command
 
+```sh
+systemctl start solobit.socket
 
+```
+
+### Sanity checking and debug info
+
+Finally to make sure that its running without any errors do:
+
+```sh
+systemctl status solobit.socket
+```
+
+Additionally you might want to check the log if something went wrong:
+
+```sh
+journalctl -xn
+```
+
+Thats it so far.
 
 ## Dependencies
 
@@ -311,7 +428,7 @@ probability (and other abstracted ideas) of another web server running on the
 port at `80`. As you'll later see, we are cunning in our attempts to run any any
 protocol and any port under 80.
 
-```coffee-script
+```coffeescript
 
     #
     # Include core node.js HTTP server library
@@ -338,7 +455,7 @@ functionality through the use of the `module.exports` method.
 So this used to a `winston = require 'winston'` script but instead we are going
 to make this kind of logging its own internal module.
 
-``` coffee-script
+```coffeescript
 
     #
     # Optionally delegate logging tasks to another 'chapter'?
@@ -353,7 +470,7 @@ to make this kind of logging its own internal module.
 
 Support for running node.js as a socket-activated service under systemd
 
-``` coffee-script
+```coffeescript
 
     #
     # Not really need to assign this to a variable yet?
@@ -372,12 +489,14 @@ so on. Therefor we employ a strategy much like other PaaS (Heroku e.g.) uses:
 the resource becomes available only on request.
 
 
-```coffee-script
+```coffeescript
 
-    #
     # We may choose not to include this style of three times # here but
     # the way GitHub currently parses Markdown files (GFM) `.md` inside their
     # site, the first new line and any will be neglected.
+
+    #
+    # Include the library to automatically spawn/die on command
     #
     require 'autoquit'
 
@@ -389,7 +508,7 @@ We create a locally scoped variable (in the context of this file and those who
 import it) to hold our `journalctl` logbook inside node.js and point it to the
 instance of the `Log` object so we may use its exposed methods and properties.
 
-```coffee-script
+```coffeescript
 
     #
     # Include this `journalctl` service log inside here :)
@@ -414,18 +533,18 @@ This will also be passing metrics that we may find useful although this is a
 typical requirement that we need on occassion, not always, so not worth
 wrapping.
 
-```coffee-script
+```coffeescript
 
     #
-    # This may or may not be exported later. It's really the type of
-    # functionality you may only need once during initialization and
-    # basic sanity checks.
+    # We use this package to ensure any ports we want to use are free
     #
-
-    # Import the https://github.com/danielzzz/node-portchecker package from npm
     portchecker = require 'portchecker'
 
 ```
+
+This may or may not be exported later. It's really the type of functionality you
+may only need once during initialization and basic sanity checks. It seems
+redundant to write entire seperated files for these purposes.
 
 
 ## Sanity checks
@@ -451,7 +570,7 @@ Besides having our normal program dependencies, we also use a few 'test'
 dependencies that become useful here. These are used in order to have integrated
 BDD (Behaviour) or TDD (Test) driven development techniques.
 
-```coffee-script
+```coffeescript
 
     vows    = require 'vows'
 
@@ -489,7 +608,7 @@ Keep in mind, I do not advocate this use and you need to know never to mix tabs
 and spaces. In the end, I might go replace these by a `nconf` or like-wise
 settings from JSON program.
 
-``` coffee-script
+``` coffeescript
 
     host        = '192.168.1.1'
 
@@ -526,7 +645,7 @@ test suite per file, and have the suite's subject match the file name, but we're
 gonna have to break that convention for now (due to the coherent, literate style
 of writing). Test suites are created with `vows.describe`.
 
-``` coffee-script
+``` coffeescript
 
     suite = vows.describe """
         Network sanity checks and tests for cluster server.
@@ -544,10 +663,6 @@ of writing). Test suites are created with `vows.describe`.
         # NOTE: I can't use triple `#` for multi-line code in here!
 
 
-
-
-
-
 ```
 
 Chaining batches is useful when you want to test functionality in a certain
@@ -556,7 +671,7 @@ you want to test. Keep in mind, I'm still chaining the previous `suite` object
 with subsequential methods, so I do not have to use `suite` here again because we
 left the previous bracket `(` open here :)
 
-``` coffee-script
+``` coffeescript
 
     # So we can just continue here...
 
@@ -595,7 +710,7 @@ left the previous bracket `(` open here :)
                 )
 
 
-    #---- check if the port is open ---------------------------------------------------
+    #---- check if the port is open
     # wait max 1 sec for result (defautl 400 milisecs)
     portchecker.setTimeout 1000
 
