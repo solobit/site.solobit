@@ -68,8 +68,9 @@ project and why I find it relevant for consideration.
 
 
 
-<!-- These blocks should follow any subsection with many references for clearer
-overview and easily link maintenance -->
+<!-- These blocks should follow any subsection with many hyperlinks / references
+for clearer overview and easily link maintenance -->
+
 [LIT]: <http://www.literateprogramming.com/>
 [GFM]: <https://help.github.com/articles/github-flavored-markdown>
 [LCS]: <https://github.com/jashkenas/coffee-script/issues/1786>
@@ -317,7 +318,6 @@ protocol and any port under 80.
     # Include core node.js HTTP server library
     #
     http = require 'http'
-
 ```
 
 #### Domains (experimental)
