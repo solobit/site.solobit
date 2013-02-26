@@ -19,10 +19,16 @@ and vice-versa.
 <small>a original work by Supersymmetry</small>
 
 <!-- A quick index always goes well in large and often referenced documents -->
-__Skip to go to:__ [Installation]() | [Configuration]() | [Style Guide]() |
-[Contribute]()
+
+__Skip to go to:__ [Installation Instructions][01] | [Configuration][02] |
+[Style Guide][03] | [ToDo list][04]
 
 __Subjects:__ [Software Architecture]() | [Programming Paradigms]() | [Patterns]()
+
+[01]: #installation
+[02]: #configuration
+[03]: #styles
+[04]: #todos
 
 ## ToDos
 
@@ -249,7 +255,8 @@ for now (assuming a PWD of the root, mine is at /srv/www/server.coffee at the
 moment).
 
 ```sh
-\cp server.litcoffee README.md && \
+\
+cp server.litcoffee README.md && \
 git add . && \
 git commit -am 'update' && \
 git push && \
