@@ -34,8 +34,8 @@ just to show it still works. -->
 
 Additional stuff to do:
 
-- [ ] Do some reflection on this file for further fine-grained management
-- [ ] Auto-require module imports etc.
+-[ ] Do some reflection on this file for further fine-grained management
+- [] Auto-require module imports etc.
 - [ ] Isomorphic and HTML5 contenteditable tips and trics
 - [ ] Self-scan to bridge `h1` to `h6` and the Markdown HTML identifier gap
 - [ ] Include isomorphic client/server view logic seperation (some just really is...)
