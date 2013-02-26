@@ -32,10 +32,7 @@ star `*` first character on new line equals summarized, unordered list, we use
 the single or double underscore symbols to render fat or italic texts. This is
 just to show it still works. -->
 
-**Additional stuff to do:**
-
-<!-- Note: these para's take about half my GitHub view width now atm
-anything neutral gets a *, pos gets + and minus - is for negatives -->
+Additional stuff to do:
 
 - [ ] Do some reflection on this file for further fine-grained management
 - [ ] Auto-require module imports etc.
@@ -46,6 +43,8 @@ anything neutral gets a *, pos gets + and minus - is for negatives -->
 - [ ] Make from this 1 file a bunch of directories and files? Based on rules?
 - [ ] Be able to pass variables/constant values from outside the code blocks inside
 
+<!-- Note: these para's take about half my GitHub view width now atm
+anything neutral gets a *, pos gets + and minus - is for negatives -->
 
 ## References and original work
 
